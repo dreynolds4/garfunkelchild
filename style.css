@@ -1,0 +1,179 @@
+/*
+ Theme Name:   Garfunkel Child
+ Theme URI:    
+ Description:  Garfunkel Child Theme
+ Author:       Derek Reynolds
+ Author URI:   http://derekreynolds.ca
+ Template:     garfunkel
+ Version:      1.0.0
+ Tags:         light, dark, masonry, responsive-layout, accessibility-ready
+ Text Domain:  garfunkel-child
+*/
+
+
+@import url("../garfunkel/style.css");
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+.bg-shader.master {
+    background: none repeat scroll 0 0 #eee;
+    z-index: 1;
+}
+
+.wrapper:before {
+    background: none repeat scroll 0 0 #eee;
+    content: "";
+    display: block;
+    height: 300px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -100px;
+    z-index: -2;
+}
+
+.wrapper:after {
+    background: none repeat scroll 0 0 #eee;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 200px;
+    z-index: -1;
+}
+
+.navigation {
+    background: none repeat scroll 0 0 #1d1d1d;
+}
+
+.blog-title a {
+    color: #444;
+    display: inline-block;
+    font-family: "Playfair Display",serif;
+    font-size: 3em;
+    font-weight: 900;
+    position: relative;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.blog-subtitle {
+    color: #666;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: 400;
+    margin: 30px 0 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/*open sans test*/
+body {
+    background-color: #eee;
+    border: medium none;
+    color: #444;
+    font-family: "Open Sans", "Fira Sans",sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+/*tile posts*/
+.featured-media a img {
+    /*border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;*/
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.posts .post-inner {
+    padding: 10%;
+    /*border-top: 1px solid #dedede;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;*/
+}
+
+/*open sans test*/
+.post-content {
+    font-family:  "open sans", "Crimson Text",serif;
+    font-size: 1em;
+}
+
+
+/*designed by etc*/
+.credits {
+    background: none repeat scroll 0 0 #111;
+    font-size: 0.9em;
+    padding: 50px 0;
+}
+
+/*the category title that displays on blog/projects page*/
+.page-title{
+    display: none;
+}
+.page-title h5 {
+    background: none repeat scroll 0 0 #ff5656;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 10px 8px;
+    text-transform: uppercase;
+}
+
+/*the buttons on the side which navigate between articles*/
+.post-nav-fixed a {
+    background: none repeat scroll 0 0 #ddd;
+    display: block;
+    height: 160px;
+    margin-top: -80px;
+    position: fixed;
+    top: 50%;
+    width: 40px;
+}
+
+.media-caption-container {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    display: none; /*dont display sliding gallery caption*/
+    left: 0;
+    padding: 50px 0 25px;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+}
+
+/*Category Description*/
+
+
+.page-description p {
+    color: #888;
+    font-style: italic;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/*older posts link*/
+.archive-nav a {
+    border-bottom: 1px solid transparent;
+    color: #444;
+}
+
+.archive-nav a:hover {
+    border-bottom-color: #ff5656;
+    color: #ff5656;
+}
+
+/*fixes problem with no footer on small pages*/
+.bg-shader.master {
+    background: none repeat scroll 0 0 #eee;
+    display: none;
+    z-index: 1;
+}
